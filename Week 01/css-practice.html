@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box content-box">
+        <p>Content Box</p>
+        <p>Width includes only content</p>
+    </div>
+
+    <div class="box border-box">
+        <p>Border Box</p>
+        <p>Width includes padding and border</p>
+    </div>
+
+    <section class="display-demo">
+        <span class="block">Block element (span)</span>
+        <span class="inline">Inline element</span>
+        <span class="inline-block">Inline-block element</span>
+    </section>
+
+    <section class="position-demo">
+        <div class="relative">
+            Relative positioning
+            <div class="absolute">Absolute child</div>
+        </div>
+        <div class="fixed">Fixed position (bottom-right)</div>
+    </section>
+</body>
+
+</html>

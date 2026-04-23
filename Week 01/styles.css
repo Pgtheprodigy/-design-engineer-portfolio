@@ -1,0 +1,91 @@
+ /* styles.css */
+ .box {
+     width: 200px;
+     padding: 20px;
+     border: 5px solid #333;
+     margin: 20px;
+     background-color: #f0f0f0;
+ }
+
+ .content-box {
+     box-sizing: content-box;
+     /* Total width = 200 + 20+20 + 5+5 = 250px */
+ }
+
+ .border-box {
+     box-sizing: border-box;
+     /* Total width = 200px (includes padding and border) */
+ }
+
+ .display-demo span {
+     background-color: lightblue;
+     margin: 5px;
+     padding: 10px;
+ }
+
+ .block {
+     display: block;
+ }
+
+ .inline {
+     display: inline;
+ }
+
+ .inline-block {
+     display: inline-block;
+     width: 150px;
+ }
+
+ .position-demo {
+     height: 300px;
+     background-color: #f9f9f9;
+     position: relative;
+ }
+
+ .relative {
+     position: relative;
+     top: 20px;
+     left: 20px;
+     background-color: lightcoral;
+     padding: 20px;
+ }
+
+ .absolute {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     background-color: lightgreen;
+     padding: 10px;
+ }
+
+ .fixed {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: lightblue;
+     padding: 10px;
+ }
+
+ .relative {
+     position: relative;
+     top: 20px;
+     left: 20px;
+     background-color: lightcoral;
+     padding: 20px;
+ }
+
+ .absolute {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     background-color: lightgreen;
+     padding: 10px;
+ }
+
+ .fixed {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: lightblue;
+     padding: 10px;
+ }
