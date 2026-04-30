@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paymentui.css">
+    <title>Sneaker Payment</title>
+</head>
+
+<body>
+    <main>
+        <div class="form-column">
+            <span>←</span>
+            <h2>Payment Details</h2>
+            <p>Enter your payment details to complete your purchase</p>
+
+            <form action="" method="get" class="input-group">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Type in your email address">
+                </div>
+
+                <div class="input-group">
+                    <label for="name">Name on Card</label>
+                    <input type="text" id="name" placeholder="Type in your card name">
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" inputmode="numeric" id="card-number" placeholder="0000 0000 0000 0000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="CVV">CVV</label>
+                        <input type="number" id="CVV" placeholder="000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="expiry">Expiry Date</label>
+                        <input type="month" id="expiry" name="expiry" min="2026-01" value="">
+                    </div>
+
+                    <div class="rem-checkbox">
+                        <input type="checkbox" id="remember-card">
+                        <label for="remember-card">Remember this card</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="billing-address">Billing Address</label>
+                    <input type="text" id="billing-address" placeholder="Type in your home address">
+                    <select name="city" id="city-select">
+                        <option value="">Select City</option>
+                        <option value="">Kubwa</option>
+                        <option value="">Gwarinpa</option>
+                        <option value="">Asokoro</option>
+                        <option value="">Jabi</option>
+                        <option value="">Wuse</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" placeholder="0000 0000 0000 0000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" inputmode="numeric" id="postal-code" placeholder="0000">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="country">Country</label>
+                    <select name="country" id="country-select">
+                        <option value="">Select Country</option>
+                        <option value="">Nigeria</option>
+                        <option value="">Ghana</option>
+                        <option value="">Cameroon</option>
+                        <option value="">Togo</option>
+                        <option value="">Benin</option>
+                    </select>
+                </div>
+                <p>By clicking "confirm payment" you agree to the company's terms and conditions</p>
+                <button type="submit">Confirm Payment - $500.00</button>
+                <small>Payment are secured and encrypted</small>
+            </form>
+        </div>
+
+        <aside>
+            <img src="https://share.google/QZJJLPY19i9EFZM1m" alt="Air Fawk 1">
+            <figcaption>
+                <h3>brand New Air Fawk 1</h3>
+                <h4>$500.00</h4>
+            </figcaption>
+        </aside>
+    </main>
+</body>
+
+</html>
