@@ -7,10 +7,94 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     background-color: white;
     border-radius: 40px;
     padding: 120px;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.select {
+    width: 100%;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+input[type="email"] {
+    width: 100%;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+input[type="number"] {
+    width: 100%;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+input[type="month"] {
+    width: 100%;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #002042;
+    color: white;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    background-color: #002042;
+    color: white;
+    padding: 40px;
 }
