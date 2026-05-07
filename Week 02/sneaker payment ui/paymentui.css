@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 main {
@@ -18,6 +19,7 @@ main {
     padding: 120px;
     /*display: flex;*/
     display: grid;
+    max-width: 1200px;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +34,15 @@ form {
 
 .input-row {
     display: flex;
-    gap: 10px;
+    gap: 8px;
+}
+
+.large-input {
+    flex: 2;
+}
+
+.small-input {
+    flex: 1;
 }
 
 .select {
@@ -42,28 +52,17 @@ form {
     padding: 12px;
 }
 
-input[type="text"] {
-    width: 100%;
-    border: 1.5px solid #ccc;
-    border-radius: 8px;
-    padding: 12px;
+.rem-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-input[type="email"] {
-    width: 100%;
-    border: 1.5px solid #ccc;
-    border-radius: 8px;
-    padding: 12px;
-}
-
-input[type="number"] {
-    width: 100%;
-    border: 1.5px solid #ccc;
-    border-radius: 8px;
-    padding: 12px;
-}
-
-input[type="month"] {
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="month"],
+select {
     width: 100%;
     border: 1.5px solid #ccc;
     border-radius: 8px;
@@ -78,9 +77,14 @@ label {
     margin-bottom: 5px;
 }
 
+.rem-checkbox label {
+    margin-bottom: 0px;
+}
+
 button {
     background-color: #002042;
     color: white;
+    width: 100%;
     height: 56px;
     border: none;
     border-radius: 8px;
@@ -97,4 +101,9 @@ figcaption {
     background-color: #002042;
     color: white;
     padding: 40px;
+}
+
+small {
+    text-align: center;
+    color: #777;
 }
